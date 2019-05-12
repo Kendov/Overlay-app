@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="..\assets\css\main.css">
+  </head>
+  <body id="bodyCover">
+
+    <div class="dragbox">
+      <img src="..\assets\img\dragicon.png" alt="dragicon">
+    </div>
+    <div id="menu">
+      <div id="menubar">
+        <button id="close-btn"> <img src="..\assets\img\shutdown.png" alt="shutdownBtn"></button>
+        <input id="volume-bar"  orient="vertical" type="range" step="1" value="100" min="0" max="100">
+        <div class="input-range">
+
+        </div>
+        
+        
+      </div>
+    </div>
+    <!--  
+    <div id="title-bar">
+      
+      <div id="title">My Life For The Code</div>
+      
+      <div id="title-bar-btns">
+        
+        <button id="min-btn">-</button>
+
+               <button id="max-btn">+</button>
+
+               <button id="close-btn">x</button>
+
+          </div>
+
+     </div>
+  -->
+    <div class="videoFrame">
+      
+      <div id="player" enable='autoplay' allowfullscreen="0"></div>
+      
+    
+    </div>
+    
+    <div class="cover" id="cover"> </div>
+    
+    <div class="middle">
+      <div class="inner">
+        
+        <input type="text" name="urlInput" id="urlInput" size="25" placeholder="URL " >
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+
+    <script src="player.js"></script>
+    <script src="resize.js"></script>
+    <script src="hideCursor.js"></script>
+    
+    <script src="getIbput.js"></script>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+
+.dragbox{
+    -webkit-app-region: drag;
+    position: absolute;
+    z-index: 23;
+
+}
+.dragbox img{
+    width: 6vh;
+    height: 6vh;
+}
+
+#menu{
+       
+    background-color: transparent;
+    height: 100vh;
+    width: 60px;
+    float: right;
+    z-index: 22;
+    position: relative;
+    
+    
+}
+#menubar{
+    
+    background-color: #353535;
+    height: 100vh;
+    width: 60px;
+    float: right;
+    z-index: 20;
+    position: relative;
+    right: -100px;
+    transition: 0.5s;
+    text-align: center;
+    font-family: sans-serif;
+}
+#menu:hover #menubar{
+    
+    right: 0px;
+}
+#menubar button{
+    margin: 10px;
+}
+#menubar div{
+    margin: 10px;
+}
+#close-btn img{
+    width: 5vh;
+    height: 5vh;
+}
+.input-range{
+    transform: rotate(-90deg);
+    margin: 50%;
+    transform: translate(2,0)
+    
+}
+
+#volume-bar{
+    -webkit-appearance: slider-vertical;
+    width: 10px;
+}
+
+/*
+#title-bar {
+
+    -webkit-app-region: drag;   
+    height: 32px;    
+    padding: 0px; 
+    margin: 0px; 
+    color: rgb(107, 107, 107);
+    font-family: sans-serif;
+   
+}
+  
+#title {
+
+    
+    top: 0px;
+    left: 12px;   
+    line-height: 32px;  
+    font-size: 14px;
+
+}
+
+#title-bar-btns {
+
+    -webkit-app-region: no-drag;  
+    
+    top: 1px; 
+    right: 0px; 
+
+}
+     
+#title-bar-btns button {
+   
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    border: none;
+    color: #F1F1F1;
+    font-size: 16px;
+   
+}
+      
+#title-bar-btns button:hover {
+    background-color: #3F3F41;
+}
+   
+*/
+
+
+
+
+#bodyCover{
+    cursor: auto;
+    padding: 0;
+    margin: 0;
+    color: white;
+    overflow:hidden;
+    background-color: black;
+}
+
+.videoFrame{
+    position: absolute; 
+    z-index: -22;
+    
+    width: 100%; 
+    height: 100%
+}
+
+
+.middle{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 200%);
+}
+.inner{
+    padding: 10px;
+    margin: 5px;
+    color:transparent;
+    font-family: sans-serif, Helvetica, sans-serif;
+    
+    
+    
+}
+.inner input::placeholder{
+    color: transparent;
+}
+.inner input:hover::placeholder{
+    color: black;
+}
+.inner:hover {
+    
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    font-family: sans-serif, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 5px;
+
+    
+}
+.inner input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 25px;
+    text-align: center;
+    color: transparent;
+}
+.inner input:hover{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+.cover{
+    background-color: black;
+    position:fixed;
+    height: 100%;
+    width: 100%;
+}
+
