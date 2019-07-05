@@ -10,13 +10,3 @@ When the Overlay-app is not focus you need to use keyboard shortcut to get his c
 
 The intuit of this project is learn web development tools, electron framework and api implementation.
 
-
-
-
-How to run the project
-
-on terminal type:
-
-npm start
-
-*require nodejs to run

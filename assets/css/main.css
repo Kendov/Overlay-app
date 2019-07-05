@@ -1,4 +1,9 @@
+img{
+    max-width: 100%;
+    max-width: 100%;
+}
 
+/*button used to drag the window*/
 .dragbox{
     -webkit-app-region: drag;
     position: absolute;
@@ -10,6 +15,7 @@
     height: 6vh;
 }
 
+/*div used to triger the hover*/
 #menu{
        
     background-color: transparent;
@@ -21,7 +27,41 @@
     
     
 }
-#menubar{
+
+#volume-bar{
+    -webkit-appearance: slider-vertical;
+    width: 10px;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    background: #4CAF50;
+    outline: none;
+    
+}
+
+.menu-btn{
+    position: relative;
+    transform: translate(100px, 0px);
+    transition: 0.5s;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px;
+    
+}
+
+#menu:hover #close-btn{
+    transform: translate(0px, 0px);
+    
+}
+
+#menu:hover #volume-bar{
+    transform: translate(150%);
+    transition-delay: 0.1s;
+    
+}
+
+/*
+#close-btn #volume-bar {
     
     background-color: #353535;
     height: 100vh;
@@ -34,7 +74,8 @@
     text-align: center;
     font-family: sans-serif;
 }
-#menu:hover #menubar{
+
+#menu:hover #close-btn #volume-bar {
     
     right: 0px;
 }
@@ -53,60 +94,7 @@
     margin: 50%;
     transform: translate(2,0)
     
-}
-
-#volume-bar{
-    -webkit-appearance: slider-vertical;
-    width: 10px;
-}
-
-/*
-#title-bar {
-
-    -webkit-app-region: drag;   
-    height: 32px;    
-    padding: 0px; 
-    margin: 0px; 
-    color: rgb(107, 107, 107);
-    font-family: sans-serif;
-   
-}
-  
-#title {
-
-    
-    top: 0px;
-    left: 12px;   
-    line-height: 32px;  
-    font-size: 14px;
-
-}
-
-#title-bar-btns {
-
-    -webkit-app-region: no-drag;  
-    
-    top: 1px; 
-    right: 0px; 
-
-}
-     
-#title-bar-btns button {
-   
-    height: 32px;
-    width: 32px;
-    background-color: transparent;
-    border: none;
-    color: #F1F1F1;
-    font-size: 16px;
-   
-}
-      
-#title-bar-btns button:hover {
-    background-color: #3F3F41;
-}
-   
-*/
+}*/
 
 
 
@@ -136,6 +124,13 @@
     bottom: 50%;
     transform: translate(-50%, 200%);
 }
+#urlInput{
+    height: 5vh;
+    width: 50vh;
+    align-content: center;
+    text-align: center;
+    
+}
 .inner{
     padding: 10px;
     margin: 5px;
@@ -147,6 +142,7 @@
 }
 .inner input::placeholder{
     color: transparent;
+    font-size: 4vh;
 }
 .inner input:hover::placeholder{
     color: black;
@@ -186,3 +182,30 @@
     width: 100%;
 }
 
+/*#volume-bar {
+    -webkit-appearance: none;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  #volume-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  
+  #volume-bar::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }*/
