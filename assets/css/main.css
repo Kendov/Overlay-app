@@ -30,8 +30,9 @@ img{
 
 #volume-bar{
     -webkit-appearance: slider-vertical;
+    transform: translate(700%)/*rotate(-90deg)*/;
     width: 10px;
-    
+    height: 76px;
     border-radius: 5px;
     cursor: pointer;
     background: #4CAF50;
@@ -55,7 +56,7 @@ img{
 }
 
 #menu:hover #volume-bar{
-    transform: translate(150%);
+    transform: translate(125%)/*rotate(-90deg)*/;
     transition-delay: 0.1s;
     
 }
@@ -146,6 +147,9 @@ img{
 }
 .inner input:hover::placeholder{
     color: black;
+}
+#urlInput:focus::-webkit-input-placeholder{
+    color: transparent;
 }
 .inner:hover {
     
