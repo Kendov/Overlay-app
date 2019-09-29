@@ -6,9 +6,14 @@
     <link rel="stylesheet" href="..\assets\css\main.css">
   </head>
   <body id="bodyCover">
+    <div class="top-bar">
 
-    <div class="dragbox">
-      <img src="..\assets\img\dragicon.png" alt="dragicon">
+      <div class="dragbox">
+        <img src="..\assets\img\dragicon.png" alt="dragicon">
+      </div>
+      <div id="close-btn">
+          <img src="..\assets\img\shutdown.png" alt="shutdownBtn">
+      </div>
     </div>
     <div id="menu">
       <!-- 
@@ -16,16 +21,13 @@
         </div>
         
       -->
-      <div class = "conteiner-closerBtn">
-        <button id="close-btn">
-          <img src="..\assets\img\shutdown.png" alt="shutdownBtn">
-        </button>
-      </div>
-
-      <div class="conteiner-volumeBar">
+      
+      <div class="conteiner-volume">
         <input id="volume-bar" type="range" step="1" value="100" min="0" max="100">
       </div>
+        
       
+
     </div>
      
     <div class="videoFrame">
