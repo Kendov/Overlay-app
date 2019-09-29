@@ -6,10 +6,6 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
 
-
-
-
-
 var playerConfig = {},                 // Define the player config here
     queue = {                          // To queue a function and invoke when player is ready
       content: null,

@@ -11,7 +11,14 @@
       }); 
       document.getElementById("volume-bar").addEventListener("input", function (e) {
         player.setVolume(document.getElementById("volume-bar").value);
-      }); 
+      });
+      document.getElementById("playbtn").addEventListener("click", function (e) {
+        if(player.getPlayerState() == YT.PlayerState.PLAYING)
+          player.pauseVideo();
+        if(player.getPlayerState() == YT.PlayerState.PAUSED)
+          player.playVideo();
+        
+      });
       
     }; 
     

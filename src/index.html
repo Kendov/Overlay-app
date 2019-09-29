@@ -6,49 +6,39 @@
     <link rel="stylesheet" href="..\assets\css\main.css">
   </head>
   <body id="bodyCover">
-    <div class="top-bar">
 
-      <div class="dragbox">
-        <img src="..\assets\img\dragicon.png" alt="dragicon">
-      </div>
-      <div id="close-btn">
-          <img src="..\assets\img\shutdown.png" alt="shutdownBtn">
-      </div>
-    </div>
-    <div id="menu">
-      <!-- 
-        <div id="menubar">
-        </div>
-        
-      -->
+    <div class="top-bar" id="tbar">
       
+      <div class = "exit" id = "close-btn">
+        <img src="..\assets\img\shutdown.png" alt="shutdownBtn">
+      </div>
+
+    </div>
+
+
+    <div id="menu">
+
+      <div class="play-btn" id = "playbtn">
+        <img src="..\assets\img\play.png" alt="playBtn">
+      </div>
+
       <div class="conteiner-volume">
         <input id="volume-bar" type="range" step="1" value="100" min="0" max="100">
       </div>
         
-      
-
     </div>
      
     <div class="videoFrame">
       
       <div id="player" enable='autoplay' allowfullscreen="0"></div>
       
-    
     </div>
     
     <div class="cover" id="cover"> </div>
     
     <div class="middle">
-      <div class="inner">
-        
-        <input type="text" name="urlInput" id="urlInput" size="25" placeholder="URL " >
-      </div>
+      <input type="text" name="urlInput" id="urlInput" spellcheck="false" size="25" placeholder="URL" >
     </div>
-    
-    
-    
-    
     
     
 
