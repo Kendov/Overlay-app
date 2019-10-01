@@ -3,8 +3,8 @@
 A software that let you watch youtube videos and lives while playing videogames or using others programs.
 This software can be positioned in any place on screen, resized and will not interfere in you others aplications.
 
-![simple ui](https://raw.githubusercontent.com/Kendov/Overlay-app/blob/master/.github/ui.png?raw=true)
-![in game image](https://raw.githubusercontent.com/Kendov/Overlay-app/blob/master/.github/inGame.png?raw=true)
+![simple ui](https://raw.githubusercontent.com/Kendov/Overlay-app/master/.github/ui.png?raw=true)
+![in game image](https://raw.githubusercontent.com/Kendov/Overlay-app/master/.github/inGame.png?raw=true)
 
 ## Getting Started
 For now you need to copy and paste the youtube url video in the url text box(only videos with embed functionality enabled works)
