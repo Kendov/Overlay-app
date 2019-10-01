@@ -22,8 +22,3 @@ npm install && npm start
 
 
 
-
-
-
-The intuit of this project is learn web development tools, electron framework and api implementation.
-
