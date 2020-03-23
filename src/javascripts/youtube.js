@@ -1,5 +1,5 @@
 const YoutubeApi = {
-    apiKey: "",
+    apiKey: apiKey,
     apiUrl: "https://www.googleapis.com/youtube/v3/search",
     youtubeOembed: "https://www.youtube.com/oembed?url=",
     
@@ -13,20 +13,24 @@ const YoutubeApi = {
         
         
         const query = "?part=id&key=" + this.apiKey
-        await fetch(this.apiUrl + query,{
+        return await fetch(this.apiUrl + query,{
             method: 'GET',
             headers:myHeaders,
             
-        }).then( (response)=> {return response.json()} ).then((data)=>{console.log(data)});
+        }).then( (response)=> {return response.json()} );
     },
 
 
     getVideoById: async function(id){
-        const youtubeVideoUrl = "https%3A//www.youtube.com/watch%3Fv%3D", // + id
-        const url = this.youtubeOembed + this.youtubeVideoUrl + id;
-        console.log(url);
+        const youtubeVideoUrl = "https%3A//www.youtube.com/watch%3Fv%3D"; // + id
+        const url = this.youtubeOembed + youtubeVideoUrl + id;
+        //console.log(url);
+        
 
-        await fetch(url).then((response)=>{return response.json()});
+        return await fetch(url).then(
+            (response)=>{return response.json()}
+        );
+
     },
 
 
@@ -36,9 +40,9 @@ const YoutubeApi = {
 
         //console.log(url);
 
-        fetch(url).then(
+        return await fetch(url).then(
             (response)=>{return response.json()}
-        ).then((data)=>{console.log(data)});
+        )
     },
 
 
